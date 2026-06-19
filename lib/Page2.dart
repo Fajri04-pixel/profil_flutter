@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:from_css_color/from_css_color.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Page2 extends StatelessWidget {
   const Page2({Key? key}) : super(key: key);
@@ -6,12 +8,12 @@ class Page2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFFF5F0E8),
+      backgroundColor: fromCssColor("#8CC7C4"),
       appBar: AppBar(
-        backgroundColor: Color(0xFFF5F0E8),
+        backgroundColor: fromCssColor("#8CC7C4"),
         elevation: 0,
         leading: IconButton(
-          icon: Icon(Icons.arrow_back, color: Colors.black),
+          icon: Icon(Icons.arrow_back, color: fromCssColor("#080616")),
           onPressed: () => Navigator.pop(context),
         ),
       ),
@@ -29,10 +31,10 @@ class Page2 extends StatelessWidget {
             // Nama
             Text(
               "Muhamad Fajri",
-              style: TextStyle(
+              style: GoogleFonts.poppins(
                 fontSize: 18,
                 fontWeight: FontWeight.bold,
-                color: Colors.black,
+                color: fromCssColor("#080616"),
               ),
             ),
             SizedBox(height: 20),
@@ -42,7 +44,7 @@ class Page2 extends StatelessWidget {
               width: double.infinity,
               padding: EdgeInsets.all(16),
               decoration: BoxDecoration(
-                color: Color.fromRGBO(252, 219, 138, 1),
+                color: fromCssColor("#FFDE42"),
                 borderRadius: BorderRadius.circular(12),
               ),
               child: Column(
@@ -50,12 +52,12 @@ class Page2 extends StatelessWidget {
                 children: [
                   Text(
                     "About",
-                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                    style: GoogleFonts.poppins(fontSize: 16, fontWeight: FontWeight.bold),
                   ),
                   SizedBox(height: 8),
                   Text(
                     "Aku manusia terkuat",
-                    style: TextStyle(fontSize: 14),
+                    style: GoogleFonts.poppins(fontSize: 14),
                   ),
                 ],
               ),
@@ -67,7 +69,7 @@ class Page2 extends StatelessWidget {
               width: double.infinity,
               padding: EdgeInsets.all(16),
               decoration: BoxDecoration(
-                color: Colors.white,
+                color: fromCssColor("#FFF6F6"),
                 borderRadius: BorderRadius.circular(12),
               ),
               child: Column(
@@ -75,17 +77,17 @@ class Page2 extends StatelessWidget {
                 children: [
                   Text(
                     "History",
-                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                    style: GoogleFonts.poppins(fontSize: 16, fontWeight: FontWeight.bold),
                   ),
                   SizedBox(height: 8),
                   Text(
                     "Dia (Fajri) berhasil angkat beban 500kg di kompetisi dunia, semua orang kagum. Namun dia tetap berlatih keras setiap hari tanpa henti. Tidak ada yang bisa menandingi kekuatannya. Manusia Terkuat terus berjuang.",
-                    style: TextStyle(fontSize: 14),
+                    style: GoogleFonts.poppins(fontSize: 14),
                   ),
                   SizedBox(height: 8),
                   Text(
                     "Dia ikuti turnamen internasional melawan para juara dunia. Kalahkan semua lawan satu per satu dengan mudah. Raih gelar juara dunia 5 kali berturut-turut. Kini menjadi legenda dan inspirasi bagi jutaan orang di seluruh dunia.",
-                    style: TextStyle(fontSize: 14),
+                    style: GoogleFonts.poppins(fontSize: 14),
                   ),
                 ],
               ),
@@ -102,10 +104,10 @@ class Page2 extends StatelessWidget {
                   Container(
                     width: double.infinity,
                     padding: EdgeInsets.all(16),
-                    color: Color.fromRGBO(252, 219, 138, 1),
+                    color: fromCssColor("#FFDE42"),
                     child: Text(
                       "Skill",
-                      style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                      style: GoogleFonts.poppins(fontSize: 16, fontWeight: FontWeight.bold),
                     ),
                   ),
                   // Item putih
@@ -126,14 +128,14 @@ class Page2 extends StatelessWidget {
       width: double.infinity,
       padding: EdgeInsets.symmetric(horizontal: 16, vertical: 14),
       decoration: BoxDecoration(
-        color: Colors.white,
+        color: fromCssColor("#FFF6F6"),
         border: Border(
-          bottom: BorderSide(color: Colors.grey.shade200),
+          bottom: BorderSide(color: fromCssColor("#8CC7C4")),
         ),
       ),
       child: Text(
         skill,
-        style: TextStyle(fontSize: 14),
+        style: GoogleFonts.poppins(fontSize: 14),
       ),
     );
   }

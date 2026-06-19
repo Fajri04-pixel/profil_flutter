@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:from_css_color/from_css_color.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'Page2.dart';
 
 void main() => runApp(MaterialApp(
@@ -45,12 +47,12 @@ class home extends StatelessWidget {
 
                       Text("Muhamad Fajri", 
                         textAlign: TextAlign.center,
-                        style: TextStyle(fontSize: 18, color: Colors.black),
+                        style: GoogleFonts.poppins(fontSize: 18, color: fromCssColor("#2F2FE4")),
                       ),
 
                       Text("SMK WIKRAMA", 
                         textAlign: TextAlign.center,
-                        style: TextStyle(fontSize: 16, color: Color(0xF9916B0D)),
+                        style: GoogleFonts.poppins(fontSize: 16, color: fromCssColor("#080616")),
                       ),
 
                       TextButton( 
